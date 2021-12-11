@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Peliculas</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- mis estilos -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.scss">
+</head>
+
+<body>
+    <!-- menu de navegacion -->
+
+    <header class="header">
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+
+                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link active">Inicio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Peliculas</a></li>
+                        <li class="nav__item"><a href="#" class="btn-login ">Iniciar Sesion</a></li>
+                        <li class="nav__item"><div class="color">
+                            <button id="bdark" class="boton-color"><span><img src="icons/cloud-sun-solid.svg" alt=""></span></button>
+                        </div></li>
+                    </ul>
+                </div>
+
+                <div class="nav__social">
+                    <a href="#" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#" class="nav__social-icon"><ion-icon name="logo-behance"></ion-icon></a>
+                </div>
+
+                
+            </div>
+        </nav>
+    </header>
+
+   
+ 
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="img/header1.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/header2.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/header3.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/header4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <!-- modal de inicio de sesion o registro -->
+
+    <section class="modal">
+        <div class="modal__container">
+            <h2 class="modal__title">Inicio De Sesion</h2>
+            <form action="" class="formulario">
+                <input type="text" name="usuario" placeholder="&#xf007;  Ingrese su usuario" />
+                <input type="password" name="contraseña" placeholder="&#xf13e;  Ingrese su contraseña" />
+                <input type="submit" value="Inicio De Sesion">
+            </form>
+            <div class="enlaces-inicio">
+                <a href="#"><img src="img/logoGoogle.png" alt=""></a>
+                <a href="#"><img src="img/logoFacebook.png" alt=""></a>
+            </div>
+            <div class="enlace-cerrar">
+                <a href="#" class="modal__paragraph">¿ Te olvidaste tu contraseña ?</a>
+                <a href="#" class="modal__close"><i class="far fa-window-close"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 titulo-general-slider mt-5">
+                    <h2>Disfruta en tu TV.</h2>
+                    <p>Disfruta en familia viendo nuestras variedades de peliculas</p>
+                </div>
+                <div class="col-6">
+                    <div class="wrapper mt-5">
+                        <div class="slider" id="slider">
+                            <ul class="slides">
+                                <li class="slide" id="slide1">
+                                    <a href="#">
+                                        <img src="img/header1.jpg" class="img-responsive img-slide" alt="photo 1">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide2">
+                                    <a href="#">
+                                        <img src="img/header2.jpg" class="img-responsive img-slide" alt="photo 2">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide3">
+                                    <a href="#">
+                                        <img src="img/header3.jpg" class="img-responsive img-slide" alt="photo 3">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide4">
+                                    <a href="#">
+                                        <img src="img/header4.jpg" class="img-responsive img-slide" alt="photo 4">
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="slider-controler">
+                                <li><a href="#slide1"></a></li>
+                                <li><a href="#slide2"></a></li>
+                                <li><a href="#slide3"></a></li>
+                                <li><a href="#slide4"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container border"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 titulo-general-slider">
+                    <div class="wrapper mt-5">
+                        <div class="slider" id="slider">
+                            <ul class="slides">
+                                <li class="slide" id="slide1">
+                                    <a href="#">
+                                        <img src="img/header1.jpg" class="img-responsive img-slide" alt="photo 1">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide2">
+                                    <a href="#">
+                                        <img src="img/header2.jpg" class="img-responsive img-slide" alt="photo 2">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide3">
+                                    <a href="#">
+                                        <img src="img/header3.jpg" class="img-responsive img-slide" alt="photo 3">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide4">
+                                    <a href="#">
+                                        <img src="img/header4.jpg" class="img-responsive img-slide" alt="photo 4">
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="slider-controler">
+                                <li><a href="#slide1"></a></li>
+                                <li><a href="#slide2"></a></li>
+                                <li><a href="#slide3"></a></li>
+                                <li><a href="#slide4"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mt-5 titulo-general-slider">
+                    <h2>Disfruta en tu TV.</h2>
+                    <p>Disfruta en familia viendo nuestras variedades de peliculas</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container border"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 titulo-general-slider mt-5">
+                    <h2>Disfruta en tu TV.</h2>
+                    <p>Disfruta en familia viendo nuestras variedades de peliculas</p>
+                </div>
+                <div class="col-6">
+                    <div class="wrapper mt-5">
+                        <div class="slider" id="slider">
+                            <ul class="slides">
+                                <li class="slide" id="slide1">
+                                    <a href="#">
+                                        <img src="img/header1.jpg" class="img-responsive img-slide" alt="photo 1">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide2">
+                                    <a href="#">
+                                        <img src="img/header2.jpg" class="img-responsive img-slide" alt="photo 2">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide3">
+                                    <a href="#">
+                                        <img src="img/header3.jpg" class="img-responsive img-slide" alt="photo 3">
+                                    </a>
+                                </li>
+                                <li class="slide" id="slide4">
+                                    <a href="#">
+                                        <img src="img/header4.jpg" class="img-responsive img-slide" alt="photo 4">
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="slider-controler">
+                                <li><a href="#slide1"></a></li>
+                                <li><a href="#slide2"></a></li>
+                                <li><a href="#slide3"></a></li>
+                                <li><a href="#slide4"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer hidden-print mt-2 p-2">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-3 mt-2  col-12 col-sm-3">
+                        <div class="logo"> <img src="img/logo.png" class="img-responsive mb-2" alt=""> </div>
+                    </div>
+                    <div class="col-3 mt-2 col-12 col-sm-3 ">
+                        <ul class="lista-footer ">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="servicios.php">Servicios</a></li>
+                            <li><a href="tienda.php">Tienda</a></li>
+                            <li><a href="contacto.php">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 mt-4 col-12 col-sm-3">
+                        <ul class="lista-footer">
+                            <li><a href="#">primero</a></li>
+                            <li><a href="#">segundo</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3  mt-4 col-12 col-sm-3">
+                        <ul class="lista-footer d-flex redes">
+                            <li class="red-link"><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li class="red-link"><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li class="red-link"><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li class="red-link"><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+     <!-- ===== IONICONS ===== -->
+     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- menu -->
+    <script src="js/menu.js"></script>
+    <!-- slider 3 -->
+    <script src="js/slider3.js"></script>
+    <!-- script de boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- modal inicio de sesion o registro -->
+    <script src="js/modal.js"></script>
+    <!-- color modo oscuro -->
+    <script src="js/modoscuro.js"></script>
+
+</body>
+
+</html>
